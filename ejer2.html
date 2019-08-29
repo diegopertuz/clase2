@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var horas = prompt("digite las horas que trabaja");
+    var valor = prompt("digite el valor de las horas");
+    var porcentaje = prompt("digite el porcentaje de comicion");
+    var ventas = prompt("digite el monto total de las ventas");
+
+    comision = ventas*(porcentaje/100);
+    sueldoI = horas*valor;
+    neto = sueldoI+comision;
+    sueldosubsidiado = neto+97000;
+ if(neto<=828116) {
+
+    document.write("<p>su sueldo es (con subcidio)= $"+ sueldosubsidiado +"</p>");
+    document.write("<p>su sueldo inicial es = $"+sueldoI+"</p>");
+    document.write("<p>el porcentaje de comision es ="+porcentaje+"%</p>");
+ }else{
+
+    document.write("<p>su sueldo es = $"+neto+"</p>");
+    document.write("<p>su sueldo inicial es = $"+sueldoI+"</p>");
+    document.write("<p>el porcentaje de comision es ="+porcentaje+"%</p>");
+}
+    </script>
+</body>
+</html>
